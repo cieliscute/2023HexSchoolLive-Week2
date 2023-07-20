@@ -7,18 +7,62 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="theme-bg__color--dark">
+    <div class="theme-bg__color--dark l-pt-10">
         <div class="l-container">
             <nav class="navbar">
                 <ul class="navbar__list l-d-flex l-justify-content-between">
-                    <li class="navbar__list__items theme-text__color--white"><a href="#" class="">WILLIAM LEE</a></li>
-                    <li class="navbar__list__items theme-text__color--white"><a href="#" class="">BASED IN TAIWAN</a></li>
-                    <li class="navbar__list__items theme-text__color--white"><a href="#" class="">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
-                    <li class="navbar__list__items theme-text__color--white"><a href="#" class="">CONTACT ME</a></li>
+                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">WILLIAM LEE</a></li>
+                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">BASED IN TAIWAN</a></li>
+                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
+                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">CONTACT ME</a></li>
                 </ul>
             </nav>
         </div>
+    </div>
+    <header class="theme-bg__color--dark l-py-18">
+        <div class="l-container l-d-flex l-align-items-center">
+            <div class="l-col-6 l-mr-6">
+                <img src="./assets/Rectangle 5.png" alt="William Lee照片">
+            </div>
+            <div class="l-col-6 l-d-flex l-flex-column ">
+                <p class="l-fs-64 theme-text__color--white">Hi <br>I’m a front-end developer</p>
+                <h1 class="theme-text-h1 theme-text__color--primary l-align-self-end">William</h1>
+                <!-- contact me好像只能設定成inline-block,line-height才會有作用 不確定這樣是不是個好方法？ 還是有其他更直覺的做法？ -->
+                <a href="" class="btn btn--hover l-align-self-end theme-text__color--black"><span class="l-fs-16 l-d-inline-block l-mr-1">contact me</span><img src="./assets/arrow_outward.svg" alt=""></a>
+            </div>
+        </div>
     </header>
+    <main>
+
+        <section class="about l-py-40 theme-bg__color--dark">
+            <div class="l-container l-d-flex l-justify-content-between l-align-items-center ">
+                <div class="l-col-6">
+                    <div class="card">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="l-col-5">
+                    <h2>About Me</h2>
+                    <p>With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong
+                    understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay
+                    up-to-date in the field.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

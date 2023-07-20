@@ -6,6 +6,7 @@
 * MIXIN...............MIXINS here!
 * BASE................一些TAG的基礎樣式
 * LAYOUT&THEME........排版相關(flex,jcc,container...etc)
+* MODULES.............模組(如btn,card等等)
 * MAIN-CSS............剩餘主要樣式
 */
 /*------------------------------------*\
@@ -15,7 +16,7 @@
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 html,
 body,
 div,
@@ -168,11 +169,12 @@ a {
 \*------------------------------------*/
 body {
   line-height: 1.5;
-  font-family: "Bruno Ace", cursive;
+  font-family: "Bruno Ace SC", cursive;
 }
 
-a:link {
-  color: inherit;
+* {
+  box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 /*------------------------------------*\
@@ -187,8 +189,32 @@ a:link {
   display: flex;
 }
 
+.l-d-inline-block {
+  display: inline-block;
+}
+
 .l-justify-content-between {
   justify-content: space-between;
+}
+
+.l-justify-content-center {
+  justify-content: center;
+}
+
+.l-align-items-center {
+  align-items: center;
+}
+
+.l-align-items-start {
+  align-items: flex-start;
+}
+
+.l-flex-column {
+  flex-direction: column;
+}
+
+.l-align-self-end {
+  align-self: flex-end;
 }
 
 .theme-bg__color--dark {
@@ -200,7 +226,15 @@ a:link {
 }
 
 .theme-text__color--white {
-  color: white;
+  color: #fff;
+}
+
+.theme-text__color--black {
+  color: #000;
+}
+
+.theme-text__color--white--hover:hover {
+  color: #d1d1d1;
 }
 
 .l-fs-20 {
@@ -210,10 +244,22 @@ a:link {
 
 .l-fs-24 {
   font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .l-fs-32 {
   font-size: 32px;
+  font-size: 2rem;
+}
+
+.l-fs-64 {
+  font-size: 64px;
+  font-size: 4rem;
+}
+
+.l-fs-16 {
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .theme-text-h1 {
@@ -224,8 +270,64 @@ a:link {
   font-size: 40px;
 }
 
-.l-mt-40 {
+.l-mt-10 {
   margin-top: 40px;
+}
+
+.l-pt-10 {
+  padding-top: 40px;
+}
+
+.l-col-6 {
+  width: 636px;
+}
+
+.l-col-5 {
+  width: 526px;
+}
+
+.l-mr-6 {
+  margin-right: 24px;
+}
+
+.l-py-18 {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.l-py-40 {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.l-text-end {
+  text-align: end;
+}
+
+.l-ms-auto {
+  margin-left: auto;
+}
+
+.l-me-auto {
+  margin-right: auto;
+}
+
+.l-mr-1 {
+  margin-right: 4px;
+}
+
+/*------------------------------------*\
+    $MODULES
+\*------------------------------------*/
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.btn--hover:hover {
+  background-color: #d1d1d1;
 }
 
 /*------------------------------------*\
