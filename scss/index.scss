@@ -170,8 +170,8 @@ a {
     $VARIABLES
 \*------------------------------------*/
 // MIXIN的base-font-size 單位是px
-$base-font-size:16;
-$primary:#00FFA3;
+$base-font-size: 16;
+$primary: #00FFA3;
 
 
 
@@ -181,9 +181,9 @@ $primary:#00FFA3;
     $MIXIN
 \*------------------------------------*/
 //  計算字體大小 (TAG:^MIXIN ^font-size ^calc)
-@mixin font-size($font-size){
-    font-size:$font-size +px;
-    font-size:($font-size / $base-font-size) +rem;
+@mixin font-size($font-size) {
+    font-size: $font-size +px;
+    font-size: ($font-size / $base-font-size) +rem;
 }
 
 
@@ -192,13 +192,19 @@ $primary:#00FFA3;
     $BASE
 \*------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 body {
     line-height: 1.5;
     font-family: 'Bruno Ace SC', cursive;
 }
-*{
-    box-sizing:border-box;
-    outline: 1px solid red;
+
+* {
+    box-sizing: border-box;
+    // outline: 1px solid red;
+}
+
+h2{
+    @include font-size(64)
 }
 
 
@@ -218,100 +224,160 @@ body {
     width: 1296px;
     margin: auto;
 }
+
 .l-d-flex {
     display: flex;
 }
-.l-d-inline-block{
+
+.l-d-inline-block {
     display: inline-block;
 }
+
 .l-justify-content-between {
     justify-content: space-between;
 }
-.l-justify-content-center{
+
+.l-justify-content-center {
     justify-content: center;
 }
-.l-align-items-center{
+
+.l-align-items-center {
     align-items: center;
 }
-.l-align-items-start{
+
+.l-align-items-start {
     align-items: flex-start;
 }
-.l-flex-column{
+
+.l-flex-column {
     flex-direction: column;
 }
-.l-align-self-end{
+.l-flex-wrap{
+    flex-wrap: wrap;
+}
+
+.l-align-self-end {
     align-self: flex-end;
 }
+
 .theme-bg__color--dark {
     background-color: #000;
 }
+.theme-bg__img--ocean{
+    background-image: url(../assets/background-img.png);
+    background-repeat: no-repeat;
+}
+
 .theme-text__color--primary {
     color: $primary;
 }
-.theme-text__color--white{
-    color:#fff;
+
+.theme-text__color--white {
+    color: #fff;
 }
-.theme-text__color--black{
-    color:#000;
+
+.theme-text__color--black {
+    color: #000;
 }
-.theme-text__color--white--hover:hover{
-    color:#d1d1d1;
+
+.theme-text__color--white--hover:hover {
+    color: #d1d1d1;
 }
-.l-fs-20{
+
+.l-fs-20 {
     @include font-size(20)
 }
-.l-fs-24{
+
+.l-fs-24 {
     @include font-size(24)
 }
-.l-fs-32{
+
+.l-fs-32 {
     @include font-size(32)
 }
-.l-fs-64{
+
+.l-fs-64 {
     @include font-size(64)
 }
-.l-fs-16{
+
+.l-fs-16 {
     @include font-size(16)
 }
-.theme-text-h1{
+
+.theme-text-h1 {
     font-size: 128px;
 }
-.theme-text-h2{
+
+.theme-text-h2 {
     font-size: 40px;
 }
-.l-mt-10{
+
+.l-mt-10 {
     margin-top: 40px;
 }
-.l-pt-10{
+
+.l-pt-10 {
     padding-top: 40px;
 }
-.l-col-6{
+
+.l-col-6 {
     width: 636px;
 }
-.l-col-5{
+
+.l-col-5 {
     width: 526px;
 }
-.l-mr-6{
+
+.l-mr-6 {
     margin-right: 24px;
 }
+
+.l-col-7 {
+    width: 746px;
+}
+
 .l-py-18 {
     padding-top: 72px;
     padding-bottom: 72px;
 }
-.l-py-40{
+
+.l-py-40 {
     padding-top: 160px;
     padding-bottom: 160px;
 }
-.l-text-end{
+
+.l-text-end {
     text-align: end;
 }
-.l-ms-auto{
+
+.l-ms-auto {
     margin-left: auto;
 }
-.l-me-auto{
+
+.l-me-auto {
     margin-right: auto;
 }
-.l-mr-1{
+
+.l-mr-1 {
     margin-right: 4px;
+}
+.l-mr-4{
+    margin-right: 16px;
+}
+.l-mb-6{
+    margin-bottom: 24px;
+}
+.l-mb-9{
+    margin-bottom: 36px;
+}
+.l-mb-8{
+    margin-bottom: 32px;
+}
+.l-align-self-start{
+    align-self: flex-start;
+}
+.l-gap-6{
+    gap: 24px 24px;
 }
 
 
@@ -322,26 +388,34 @@ body {
 /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
-.btn{
+// navbar
+.navbar__list__items{
+    width: 306px;
+}
+.navbar__list__items--lastchild{
+    width: 196px;
+    text-align: end;
+}
+//btn
+.btn {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 32px;
     background-color: #fff;
 }
-.btn--hover:hover{
+.btn--hover:hover {
     background-color: #d1d1d1;
 }
-
+.card{
+    padding: 16px;
+    width: calc((100% - 24px)/2);
+    color:#15161d;
+    border: 1px solid #E3E3E3;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
 
 
 
 /*------------------------------------*\
     $MAIN-CSS
 \*------------------------------------*/
-/*header nav*/  .navbar__list__items{
-    width: 306px;
-    &:last-child{
-        width: 196px;
-        text-align: end;
-    }
-}

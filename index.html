@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>Portfolio</title>
 </head>
+
 <body>
     <div class="theme-bg__color--dark l-pt-10">
         <div class="l-container">
             <nav class="navbar">
                 <ul class="navbar__list l-d-flex l-justify-content-between">
-                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">WILLIAM LEE</a></li>
-                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">BASED IN TAIWAN</a></li>
-                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
-                    <li class="navbar__list__items "><a href="#" class="theme-text__color--white theme-text__color--white--hover">CONTACT ME</a></li>
+                    <li class="navbar__list__items "><a href="#"
+                            class="theme-text__color--white theme-text__color--white--hover">WILLIAM LEE</a></li>
+                    <li class="navbar__list__items "><a href="#"
+                            class="theme-text__color--white theme-text__color--white--hover">BASED IN TAIWAN</a></li>
+                    <li class="navbar__list__items "><a href="#"
+                            class="theme-text__color--white theme-text__color--white--hover">CURRENTLY FRONT END
+                            ENGINEER AT HEXSCHOOL</a></li>
+                    <li class="navbar__list__items navbar__list__items--lastchild"><a href="#"
+                            class="theme-text__color--white theme-text__color--white--hover">CONTACT ME</a></li>
                 </ul>
             </nav>
         </div>
@@ -28,41 +35,72 @@
                 <p class="l-fs-64 theme-text__color--white">Hi <br>I’m a front-end developer</p>
                 <h1 class="theme-text-h1 theme-text__color--primary l-align-self-end">William</h1>
                 <!-- contact me好像只能設定成inline-block,line-height才會有作用 不確定這樣是不是個好方法？ 還是有其他更直覺的做法？ -->
-                <a href="" class="btn btn--hover l-align-self-end theme-text__color--black"><span class="l-fs-16 l-d-inline-block l-mr-1">contact me</span><img src="./assets/arrow_outward.svg" alt=""></a>
+                <a href="" class="btn btn--hover l-align-self-end theme-text__color--black"><span
+                        class="l-fs-16 l-d-inline-block l-mr-1">contact me</span><img src="./assets/arrow_outward.svg"
+                        alt=""></a>
             </div>
         </div>
     </header>
     <main>
+        <section class="introduction theme-bg__img--ocean l-py-40">
+            <div class="l-container l-d-flex">
+                <div class="l-col-5 l-d-flex l-flex-column l-mr-6">
+                    <h2 class="l-fs-64 theme-text__color--white  l-mb-9">Introduction</h2>
+                    <p class="theme-text__color--white l-mb-8 l-fs-24">
+                        Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive
+                        websites that provide an
+                        optimal user experience.
+                    </p>
+                    <div class="l-d-flex l-align-self-start">
+                        <img src="./assets/sparkle-sm.png" alt="decoration img" class="l-mr-4">
+                        <img src="./assets/sparkle-sm.png" alt="decoration img" class="l-mr-4">
+                        <img src="./assets/sparkle-sm.png" alt="decoration img" class="">
+                    </div>
+                </div>
+                <div class="l-col-7 l-d-flex l-justify-content-between">
+                    <img src="./assets/sparkle.png" alt="sparkle img">
+                    <img src="./assets/photographer.png" alt="photographer">
+                    <img src="./assets/people-2.png" alt="people">
+                </div>
+            </div>
+        </section>
 
-        <section class="about l-py-40 theme-bg__color--dark">
+        <section class="about l-py-40 ">
             <div class="l-container l-d-flex l-justify-content-between l-align-items-center ">
-                <div class="l-col-6">
-                    <div class="card">
-                        <p></p>
-                        <p></p>
+                <div class="l-col-6 l-d-flex l-flex-wrap  l-gap-6">
+                    <div class="card ">
+                        <p>01</p>
+                        <p>Attention to Detail</p>
+                        <p>Meticulous code analysis and optimization.</p>
+                    </div>
+                    <div class="card ">
+                        <p>02</p>
+                        <p>Adaptability</p>
+                        <p>Swift learning of new technologies.</p>
+                    </div>
+                    <div class="card ">
+                        <p>03</p>
+                        <p>Problem Solver</p>
+                        <p>Identifying and resolving issues.</p>
                     </div>
                     <div class="card">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="card">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <div class="card">
-                        <p></p>
-                        <p></p>
+                        <p>04</p>
+                        <p>Team Player</p>
+                        <p>Collaborates and shares ideas.</p>
                     </div>
                 </div>
                 <div class="l-col-5">
-                    <h2>About Me</h2>
-                    <p>With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I have a strong
-                    understanding of user experience design and accessibility. I'm always learning new technologies and techniques to stay
-                    up-to-date in the field.</p>
+                    <h2 class="">About Me</h2>
+                    <p>With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and React. I
+                        have a strong
+                        understanding of user experience design and accessibility. I'm always learning new technologies
+                        and techniques to stay
+                        up-to-date in the field.</p>
                 </div>
             </div>
         </section>
     </main>
-    
+
 </body>
+
 </html>
