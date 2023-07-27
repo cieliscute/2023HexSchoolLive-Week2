@@ -261,6 +261,7 @@ h2 {
 .l-align-self-end {
     align-self: flex-end;
 }
+
 .l-align-self-start {
     align-self: flex-start;
 }
@@ -321,6 +322,7 @@ h2 {
 .theme-text-h2 {
     font-size: 40px;
 }
+
 .l-pt-10 {
     padding-top: 40px;
 }
@@ -344,7 +346,8 @@ h2 {
 .l-col-7 {
     width: 746px;
 }
-.l-py-10{
+
+.l-py-10 {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -367,7 +370,8 @@ h2 {
 .l-text-end {
     text-align: end;
 }
-.l-text-center{
+
+.l-text-center {
     text-align: center;
 }
 
@@ -390,6 +394,7 @@ h2 {
 .l-mb-6 {
     margin-bottom: 24px;
 }
+
 .l-mb-7 {
     margin-bottom: 24px;
 }
@@ -430,16 +435,20 @@ h2 {
     padding: 12px 24px;
     border-radius: 32px;
 }
-.btn-white{
+
+.btn-white {
     background-color: #fff;
 }
+
 .btn-white--hover:hover {
     background-color: darken($color: #fff, $amount: 10%);
 }
-.btn-black{
+
+.btn-black {
     background-color: #000;
 }
-.btn-black--hover:hover{
+
+.btn-black--hover:hover {
     background-color: lighten($color: #000, $amount: 20%);
 }
 
@@ -462,4 +471,10 @@ h2 {
 /*------------------------------------*\
     $MAIN-CSS
 \*------------------------------------*/
-//test
+// img[alt=""] {
+//     outline: 10px solid red;
+// }
+
+// a[href=""] {
+//     outline: 10px solid blue;
+// }
